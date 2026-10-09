@@ -166,7 +166,7 @@ footer{text-align:center;color:#77839d;padding:20px;font-size:12px}
 
   // Quyidagi matnni o'zingizning Publishable key bilan almashtiring.
   // sb_secret_ yoki service_role kalitini BU YERGA QO'YMANG.
-  const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_QgQHdQcF5_ZiotKSBxU74A_BLtrsTYt";
+  const SUPABASE_PUBLISHABLE_KEY = "https://gyepttxiqngvkhfqqsma.supabase.co/rest/v1/";
 
   const $ = id => document.getElementById(id);
   const loginView = $("loginView");
@@ -394,7 +394,7 @@ footer{text-align:center;color:#77839d;padding:20px;font-size:12px}
       message("loginMessage", "Supabase kutubxonasi yuklanmadi. Internetni tekshiring va sahifani yangilang.", "error");
       return;
     }
-    if (SUPABASE_PUBLISHABLE_KEY === "sb_publishable_QgQHdQcF5_ZiotKSBxU74A_BLtrsTYt" ||
+    if (SUPABASE_PUBLISHABLE_KEY === "https://gyepttxiqngvkhfqqsma.supabase.co/rest/v1/" ||
         !SUPABASE_PUBLISHABLE_KEY.startsWith("sb_publishable_")) {
       message("loginMessage", "Avval kod ichidagi SUPABASE_PUBLISHABLE_KEY qiymatini o‘zingizning sb_publishable_ kalitingiz bilan almashtiring.", "error");
       return;
